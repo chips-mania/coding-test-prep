@@ -29,22 +29,17 @@ def solution(price, money, count):
 """
 
 # 풀이 코드
-def solution(price, money, count):
-    answer = -1
-    total_cost = 0
+def solution(str1, str2):
+    answer = 0
     
-    for i in range(1,count+1):
-        total_cost += price*i
-    answer = total_cost - money
+    if str2 in str1:
+        answer = 1
+    else: 
+        answer = 2
     
     return answer
 
-# 더 간단히
-# def solution(price, money, count):
-#     total_cost = price * count * (count + 1) // 2
-#     return max(0, total_cost - money)
-
 # 회고
 """
-price*(1+2+...+count)를 구하는 거라서 등차수열의 합을 이용하는 방법도 있음
+in 이라는 연산자 기억해두기
 """
