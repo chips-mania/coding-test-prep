@@ -43,6 +43,8 @@ def solution(x):
 # 더 간단히
 def solution2(x):
     return x % sum(map(int, str(x))) == 0
+
+# 회고
 """
 1.
 x % 각 자리 숫자를 더한 수 == 0 -> True이므로 
@@ -82,10 +84,4 @@ for d in str(x):
 sum(map(int, str(x)))
 return x % sum(map(int, str(x))) == 0
 
-"""
-
-# 회고
-"""
-기능은 하지만 너무 비효율적인 코드가 많음
-축약한다고 무조건 좋은건 아니지만 요구에 맞게 간단하게 보여줄 필요가 있음
 """
