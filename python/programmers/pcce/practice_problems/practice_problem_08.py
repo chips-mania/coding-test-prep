@@ -30,16 +30,18 @@ def solution(price, money, count):
 # 풀이 코드
 def solution(num):
     answer = ''
-    if num // 2 == 1:
+
+    if num % 2 == 1:
         answer = 'Odd'
     else:
         answer = 'Even'
+        
     return answer
 
 
 # 회고
 """
-'//' -> 나머지
-% -> 몫
+'//' -> 몫
+% -> 나머지
 기억해두기
 """
