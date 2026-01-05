@@ -1,19 +1,18 @@
-# 부족한 금액 계산하기
+# 짝수와 홀수
 
 """
 <문제 설명>
-새로 생긴 놀이기구는 인기가 매우 많아 줄이 끊이질 않습니다. 이 놀이기구의 원래 이용료는 price원 인데, 놀이기구를 N 번 째 이용한다면 원래 이용료의 N배를 받기로 하였습니다. 즉, 처음 이용료가 100이었다면 2번째에는 200, 3번째에는 300으로 요금이 인상됩니다.
-놀이기구를 count번 타게 되면 현재 자신이 가지고 있는 금액에서 얼마가 모자라는지를 return 하도록 solution 함수를 완성하세요.
-단, 금액이 부족하지 않으면 0을 return 하세요.
+정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, 
+solution을 완성해주세요.
 
 <제한사항>
-놀이기구의 이용료 price : 1 ≤ price ≤ 2,500, price는 자연수
-처음 가지고 있던 금액 money : 1 ≤ money ≤ 1,000,000,000, money는 자연수
-놀이기구의 이용 횟수 count : 1 ≤ count ≤ 2,500, count는 자연수
+num은 int 범위의 정수입니다.
+0은 짝수입니다.
 
 <입출력 예>
-price	money	count	result
-3	20	4	10
+num	return
+3	"Odd"
+4	"Even"
 
 <입출력 예 설명>
 
@@ -29,17 +28,19 @@ def solution(price, money, count):
 """
 
 # 풀이 코드
-def solution(str1, str2):
-    answer = 0
-    
-    if str2 in str1:
-        answer = 1
-    else: 
-        answer = 2
-    
+def solution(num):
+    answer = ''
+
+    if num // 2 == 1:
+        answer = 'Odd'
+    else:
+        answer = 'Even'
+        
     return answer
+
 
 # 회고
 """
-in 이라는 연산자 기억해두기
+'//' -> 나머지
+% -> 몫
 """

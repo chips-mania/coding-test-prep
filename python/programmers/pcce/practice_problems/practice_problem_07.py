@@ -29,6 +29,17 @@ def solution(price, money, count):
 """
 
 # 풀이 코드
+# def solution(price, money, count):
+#     answer = -1
+#     total_cost = 0
+    
+#     for i in range(1,count+1):
+#         total_cost += price*i
+#     answer = total_cost - money
+    
+#     return answer
+
+# 최솟값을 고려해야함 (0이상)
 def solution(price, money, count):
     answer = -1
     total_cost = 0
@@ -36,15 +47,11 @@ def solution(price, money, count):
     for i in range(1,count+1):
         total_cost += price*i
     answer = total_cost - money
-    
+    answer = max(0, answer)
     return answer
-
-# 더 간단히
-# def solution(price, money, count):
-#     total_cost = price * count * (count + 1) // 2
-#     return max(0, total_cost - money)
 
 # 회고
 """
-price*(1+2+...+count)를 구하는 거라서 등차수열의 합을 이용하는 방법도 있음
+1. price*(1+2+...+count)를 구하는 거라서 등차수열의 합을 이용하는 방법도 있음
+2. 최솟값을 고려해서 max을 이용하자.
 """
