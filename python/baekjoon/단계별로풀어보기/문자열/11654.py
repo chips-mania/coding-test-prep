@@ -30,11 +30,3 @@
 # print(ord(ch))
 
 
-N = 5
-num = "54321"
-num_lst = []
-
-for i in range(N):
-    num_lst.append(int(num[i]))
-
-print(sum(num_lst))
