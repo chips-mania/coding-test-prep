@@ -26,7 +26,7 @@
 # ch.isprintable() -> 출력 가능한 문자인지 판별
 
 
-# ch = input()
-# print(ord(ch))
+ch = input()
+print(ord(ch))
 
 
