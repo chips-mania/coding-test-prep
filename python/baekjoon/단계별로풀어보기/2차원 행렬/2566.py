@@ -40,6 +40,7 @@ for i in range(9):
     row = list(map(int, input().split()))
     
     # 값을 하나하나씩 비교하면서 최댓값을 찾음
+    # -> 직관적이고 코드가 짧아서 좋음
     for j in range(9):
         if row[j] > max_num:
             max_num = row[j]
