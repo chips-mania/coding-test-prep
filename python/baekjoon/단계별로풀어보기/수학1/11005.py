@@ -17,5 +17,6 @@ while N > 0:
     # N 갱신
     N //= B
 
-    # print(ans)
+
+# print(ans)
 print(ans)
