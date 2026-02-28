@@ -83,5 +83,6 @@ else:                      # 홀수 layer: layer/1 -> 1/layer
     n = layer - k + 1
     d = k
 
+
 # f-string 사용하여 출력
 print(f"{n}/{d}")
