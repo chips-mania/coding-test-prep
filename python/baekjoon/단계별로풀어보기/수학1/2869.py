@@ -51,4 +51,4 @@ ceil은 올림인데, +1한 몫이 나오도록 더해준 후 몫을 구하면 c
 A, B, V = map(int, input().split())
 a = V-B
 b = A-B
-print((a+b-1)//b)
+print((a+b-1)//b) 
