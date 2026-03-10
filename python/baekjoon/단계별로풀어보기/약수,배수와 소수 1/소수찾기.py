@@ -55,6 +55,7 @@ for number in numbers:
     if isprime:
         cnt += 1
 
+
 # 입력받은 수를 모두 탐색한 후 소수의 개수를 출력
 print(cnt)
 
