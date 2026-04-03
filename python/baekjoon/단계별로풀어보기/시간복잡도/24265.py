@@ -21,3 +21,8 @@ MenOfPassion(A[], n) {
 n = int(input())
 print(int(n*((n-1)/2)))
 print("2")
+
+"""
+그냥, n개 중에 두 개 뽑는 경우 nC2 -> (n(n-1))/2 로 외워도 무방
+
+"""
